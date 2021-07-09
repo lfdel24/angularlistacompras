@@ -15,10 +15,10 @@ export class ItemsService {
 
   loadItems() {
     this.items = [];
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
       this.items.push({
         id: i,
-        title: 'Title',
+        title: 'Title' + i,
         price: i,
         quantity: i,
         completed: false,
@@ -37,7 +37,7 @@ export class ItemsService {
   }
 
   add(item: Item) {
-    // this.items.unshift(item);
+    this.items.unshift(item);
     // this.calculateTotal();
   }
 

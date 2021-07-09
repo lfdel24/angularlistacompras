@@ -1,1 +1,10 @@
-<p>create works!</p>
+<h3>New item</h3>
+<input type="text" [formControl]="inputTitle">
+<small></small>
+<input type="text" [formControl]="inputPrice">
+<small></small>
+<input type="text" [formControl]="inputQuantity">
+<small></small>
+<input type="text" [formControl]="inputCompleted">
+<small></small>
+<button type="submit" (click)="create()">Create</button>
