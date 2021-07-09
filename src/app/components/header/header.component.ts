@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Item } from 'src/app/models/item';
 import { ItemsService } from 'src/app/services/items.service';
 
 @Component({
@@ -7,9 +6,9 @@ import { ItemsService } from 'src/app/services/items.service';
   templateUrl: './header.component.html',
 })
 export class HeaderComponent implements OnInit {
-  constructor(private service: ItemsService) {}
+  constructor(private service: ItemsService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   text: string = '';
 

@@ -14,22 +14,16 @@ export class ItemsService {
   total: number = 0;
 
   loadItems() {
-    this.items = [
-      {
-        id: 1,
-        title: 'Comprar pan',
-        price: 1000,
-        quantity: 10,
+    this.items = [];
+    for (let i = 0; i < 10; i++) {
+      this.items.push({
+        id: i,
+        title: 'Title',
+        price: i,
+        quantity: i,
         completed: false,
-      },
-      {
-        id: 2,
-        title: 'Comprar tomates',
-        price: 2500,
-        quantity: 5,
-        completed: true,
-      },
-    ];
+      });
+    }
     this.calculateTotal();
   }
 

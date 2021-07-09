@@ -1,15 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './components/header/header.component';
-import { ItemsService } from './services/items.service';
-import { ItemsComponent } from './components/items/items.component';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './components/header/header.component';
+import { ItemsComponent } from './components/items/items.component';
+import { ItemsService } from './services/items.service';
+import { NgModule } from '@angular/core';
+import { CreateComponent } from './components/create/create.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, ItemsComponent],
+  declarations: [AppComponent, HeaderComponent, ItemsComponent, CreateComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [ItemsService],
   bootstrap: [AppComponent],
